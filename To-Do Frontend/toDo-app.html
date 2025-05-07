@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="to_do_logo.webp" type="image/x-icon">
+    <title>To-Do Application</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>TO-DO Application</h2>
+        <div class="input-container">
+            <input type="text" placeholder="Enter tasks.." id="new-task" />
+            <button class="addTask" onclick="addTask()">Add task</button>
+        </div>
+    </div>
+    <!--container contains two columns-->
+    <div class="two-columns-container">
+
+        <!--to-do taskss-->
+        <div class="column1" id="toDo">
+            <h3>To-Do tasks</h3>
+
+            <!--displaying task below the H3 tag-->
+            <div>
+                <ul id="task-list" class="display-task"></ul>
+            </div>
+        </div>
+
+        <div class="column2" id="completed">
+            <h3>Completed</h3>
+    
+            <!--displaying completed task below the H3 tag-->
+            <div>
+                <ul id="completed-task" class="task-done"></ul>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    <script src="to-doScript.js"></script>
+</body>
+
+</html>
